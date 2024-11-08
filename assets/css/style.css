@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "menu" "portada" "buscar" "main" "contact" "footer";
+  grid-template-rows: 10% auto 25% auto auto 12%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+/*Nav-Menu*/
+menu {
+  grid-area: menu;
+  background-color: #291b01;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 8px;
+}
+
+menu > div > img {
+  width: 2.7rem;
+}
+
+menu > div > h1 {
+font-size: 1.51rem;
+}
+
+ul {
+  display: none;
+}
+
+.hamburguesa {
+  font-size: 25px;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+/*Portada*/
+.portada {
+  grid-area: portada;
+  background-image: url('/assets/img/0-poetas.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+}
+
+.portada-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+.hero-text {
+  background-color: #291b01e8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+ .hero-text > h2 {
+   font-size: 2rem;
+   padding-bottom: 0px;
+   text-align: center;
+}
+
+.hero-text > h3 {
+  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+ .hero-text > p {
+  font-size: 0.9rem;
+  padding-top: 10px;
+  font-weight: 300;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/*Ordenar por*/
+.buscar {
+  grid-area: buscar;
+  display: flex;
+  flex-direction: column;
+  background-color: #887c66;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+.buscar > div > h2 {
+  font-size: 1.8rem;
+  padding: 0 0 10px 0;
+  text-align: center;
+  color: #291b01;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 80%;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+option {
+  background-color: #ffffff;
+  width: 80%;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/*Poetas*/
+main {
+  grid-area: main;
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gallery-movil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10rem;
+  border-radius: 0.25rem;
+  align-items: center;
+  border-style: double;
+  border-width: 3px;
+  border-color: #b6b0a7;
+  transition: background-color 1s steps(2);
+}
+
+.gallery-movil:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgb(255, 249, 221);
+}
+
+
+.nombre {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+}
+
+.foto img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nombre > h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding-top: 3px;
+}
+
+.gallery-movil > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #291b01;
+  color: white;
+  font-weight: 200;
+  font-size: 0.8rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.gallery-movil > button:hover { 
+  background-color: #201501;
+  transform: scale(1.1); 
+}
+
+/*Contacto*/
+.contact {
+  grid-area: contact;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 3fr);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.contact-container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.formulario > h2 {
+  text-align: center;
+  color: #291b01;
+  padding-bottom: 30px;
+}
+
+.formulario > label {
+  display: block;
+  margin-top: 10px;
+  color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #291b01;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.formulario > button:hover {
+  background-color: #0e0e0e;
+}
+
+/*Footer*/
+footer {
+  grid-area: footer;
+  background-color:#291b01;
+  color: #ffffff;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.rrss {
+  font-size: x-large;
+  margin-bottom: 10px;
+  display: inline-block;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-link {
+  color: #ffffff;
+  font-size: 1.5rem; text-decoration: none;
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+.icon-link:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.rrss > i {
+  font-size: 1.5rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.copyright > p {
+  text-align: center;
+}
+
+/* Media querie */
+@media (width >= 576px) {
+body {
+    grid-template-areas: "menu portada" "menu buscar" "menu main" "footer contact";
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+menu {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: calc(100vh - 3fr);
+    position: sticky;
+    top: 0;
+  }
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+  }
+
+  menu > div > img {
+    width: 4rem;
+  }
+
+  menu > div > h1 {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 3rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul > li {
+    font-size: 18px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: #adaeb1;
+  }
+
+  ul > li a {
+    color: #ffffff;
+    text-decoration: none; color: inherit;
+ }
+
+  ul > li:hover {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+.hamburguesa {
+  display: none;
+  }
+
+
+.portada-contenedor {
+    justify-content: center;
+    align-items: end;
+  }
+
+.hero-text > h2 {
+    font-size: 3rem;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+.hero-text > h3 {
+   font-size: 1.3rem;
+  }
+
+.buscar {
+    background-color: #ffffff;
+  }
+
+  .buscar > div > h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+
+select {
+    width: 2fr;
+    border-style: solid;
+    border-color: #c9c5ca;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0.5rem;
+  }
+
+main {
+    height: calc(100vh - 15%);
+    justify-content: start;
+    align-items: center;
+  }
+
+.gallery {
+    /*overflow-y: scroll;*/
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+footer {
+    grid-area: footer;
+    background-color:#291b01;
+    color: #ffffff;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+.rrss {
+    font-size: x-large;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.rrss > i:hover {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+.copyright {
+    font-size: 0.7rem;
+  }
+
+.copyright:hover {
+  color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+  @media (width >= 950px) {
+    body {
+      grid-template-areas: "menu portada" "menu buscar" "menu main" "footer contact";
+      grid-template-columns: 250px auto;
+      grid-template-rows: auto auto auto auto;
+    }
+
+  menu {
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 1.5rem;
+      height: calc(100vh - 3fr);
+
+    }
+
+  .logo {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      text-align: center;
+    }
+
+    menu > div > img {
+      width: 5rem;
+    }
+
+    menu > div > h1 {
+      font-size: 1.5rem;
+      }
+
+      /*Portada*/
+  .buscar {
+    padding-top: 44px;
+    background-color: #ffffff;
+   }
+
+  .buscar > div > h1 {
+      font-size: 2.7rem;
+      padding-bottom: 10px;
+   }
+
+  select {
+      width: 2fr;
+      border-style: solid;
+      border-color: #c9c5ca;
+      border-width: 2px;
+      border-radius: 8px;
+      padding: 5px;
+      margin: 0.5rem;
+    }
+
+  main {
+      height: calc(100vh - 15%);
+      justify-content: start;
+      align-items: center;
+    }
+
+  .hamburguesa {
+      display: none;
+    }
+
+  ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding-top: 3rem;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+  ul > li {
+      font-size: 18px;
+      padding-bottom: 10px;
+      cursor: pointer;
+      color: #adaeb1;
+    }
+
+  ul > li a {
+      color: #ffffff;
+      text-decoration: none;
+      color: inherit;
+   }
+
+  ul > li:hover {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+  .gallery {
+      /*overflow-y: scroll;*/
+      flex-wrap: wrap;
+      width: 85%;
+      gap: 27px;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color:#291b01;
+      color: #ffffff;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+
+  .rrss {
+      font-size: x-large;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .rrss > i:hover {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .copyright {
+      font-size: 0.7rem;
+    }
+
+  .copyright:hover {
+    color: #ffffff;
+      font-weight: 600;
+  }
+
+}

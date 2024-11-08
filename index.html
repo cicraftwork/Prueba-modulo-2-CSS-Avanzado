@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/40d1e14614.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Prueba Módulo 2 - CSS Avanzado</title>
+</head>
+<body>
+
+<!--NAV-MENU-->
+   <menu>
+    <div class="logo">
+        <img src="assets/img/Isologo-Litoral-Poeta-2021-01.png" alt="logo CI">
+        <h1>Litoral Poeta</h1>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#poetas">Poetas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="hamburguesa">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </menu>
+
+  <!--HERO-->
+  <section id="hero" class="portada">
+    <div class="portada-contenedor">
+      <div class="hero-text">
+        <h2>Chile</h2>
+        <h2>País de Poetas</h2>
+        <p>Bienvenidos a nuestra página dedicada a la rica y profunda tradición poética de Chile. En este espacio, celebramos la poesía como el alma y corazón de nuestra nación. Chile, con su diversidad geográfica y cultural, ha sido cuna de poetas que han sabido capturar la esencia del alma chilena a través de sus versos.
+
+        Nuestro sitio es un homenaje a la poesía chilena en su totalidad. Aquí, exploramos la evolución de la poesía desde sus orígenes hasta la actualidad, destacando cómo esta forma de arte ha influido y reflejado la identidad chilena. Encontrarán una amplia variedad de contenidos que abarcan desde los poemas clásicos hasta las nuevas voces que continúan enriqueciendo nuestro legado literario.</p>
+        <h3>Bienvenidos</h3>
+      </div>
+    </div>
+  </section>
+
+<!--ORDENAR POR-->
+  <section id="poetas" class="buscar">
+    <div>
+      <h2>Poetas destacados de Chile</h2>
+    </div>
+    <label for="opciones">Ordenar Por:</label>
+    <select id="opciones" name="opciones">
+      <option value="Precio">Nombre</option>
+      <option value="Color">Fecha</option>
+    </select>
+  </section>
+
+  <!-- POETAS -->
+  <main>
+    <div  class="gallery">
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Gabriela-Mistral-(1889-1957).jpg" alt="mistral">
+        </div>
+        <div class="nombre">
+          <h3>Gabriela Mistral</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Pablo-Neruda-(1904-1973).jpg" alt="neruda">
+        </div>
+        <div class="nombre">
+          <h3>Pablo Neruda</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Vicente-Huidobro-(1893-1948).jpg" alt="huidobro">
+        </div>
+        <div class="nombre">
+          <h3>Vicente Huidobro</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Jorge-Tellier-(1935-1996).jpg" alt="teillier">
+        </div>
+        <div class="nombre">
+          <h3>Jorge Teillier</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Stella-Díaz-Varín-(1926-2006).jpg" alt="colorina">
+        </div>
+        <div class="nombre">
+          <h3>Stella Díaz Varín</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Pablo-de-Rokha-(1894-1968).jpg" alt="rokha">
+        </div>
+        <div class="nombre">
+          <h3>Pablo de Rokha</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Enrique-Lihn-(1929-1988).jpg" alt="lihn">
+        </div>
+        <div class="nombre">
+          <h3>Enrique Lihn</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Carmen-Berenguer-(1942-2024).jpg" alt="berenguer">
+        </div>
+        <div class="nombre">
+          <h3>Carmen Berenguer</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Gonzalo-Rojas-(1916-2011).jpg" alt="rojas">
+        </div>
+        <div class="nombre">
+          <h3>Gonzalo Rojas</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Roberto-Bolaño-(1953-2003).jpg" alt="bolaño">
+        </div>
+        <div class="nombre">
+          <h3>Roberto Bolaño</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Nicanor-Parra-(1914-2018).jpg" alt="parra">
+        </div>
+        <div class="nombre">
+          <h3>Nicanor Parra</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+      <div class="gallery-movil">
+        <div class="foto">
+          <img src="./assets/img/Elicura-Chihuailaf-(1952).jpg" alt="Elicura">
+        </div>
+        <div class="nombre">
+          <h3>Elicura Chihuailaf</h3>
+        </div>
+        <button>Biografía</button>
+      </div>
+
+    </div>
+
+  </main>
+
+<div id="contacto" class="contact">
+  <div class="contact-container">
+    <div class="formulario">
+      <h2>Contáctanos</h2>
+      <form action="#" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="rrss">
+      <a href="https://www.facebook.com/litoralpoeta" target="_blank" class="icon-link"> <i class="fa-brands fa-facebook"></i> </a> <a href="https://www.instagram.com/litoralpoeta" target="_blank" class="icon-link"> <i class="fa-brands fa-instagram"></i>
+    </div>
+
+    <div class="copyright">
+      <p>Todos los derechos resevados</p>
+    </div>
+  </footer>
+</body>
+</html>
